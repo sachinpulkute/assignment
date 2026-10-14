@@ -1,0 +1,18 @@
+import java.util.*;
+class demo{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+         char ch = (char)('A' + num - 1);
+        for(int i=1; i<=num; i++){
+            for(int j =0;j<num;j++){
+           if(i%2==1){
+            System.out.print(ch + "\t");
+           }else{
+            System.out.print(i + "\t");
+           } 
+            }ch -=1;
+           System.out.println();
+        } 
+    }
+}
